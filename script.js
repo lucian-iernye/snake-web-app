@@ -32,13 +32,13 @@ let snake = [];
 
 snake[0] = {
   x: 9 * box,
-  y: 10 * box
+  y: 10 * box,
 };
 
 // let's create the food
 let food = {
   x: Math.floor(Math.random() * 17 + 1) * box,
-  y: Math.floor(Math.random() * 15 + 3) * box
+  y: Math.floor(Math.random() * 15 + 3) * box,
 };
 
 // creating the score variable
@@ -106,7 +106,7 @@ function draw() {
     eat.play();
     food = {
       x: Math.floor(Math.random() * 17 + 1) * box,
-      y: Math.floor(Math.random() * 15 + 3) * box
+      y: Math.floor(Math.random() * 15 + 3) * box,
     };
     // we don't remove the tail
   } else {
@@ -117,7 +117,7 @@ function draw() {
   // add new Head
   let newHead = {
     x: snakeX,
-    y: snakeY
+    y: snakeY,
   };
 
   // game over
